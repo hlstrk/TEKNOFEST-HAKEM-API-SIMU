@@ -1,4 +1,4 @@
-﻿using HAKEM.API.V2;
+﻿using HAKEM.API.V2.models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Telemetri.API.Controllers
@@ -22,25 +22,7 @@ namespace Telemetri.API.Controllers
 
 
 
-
-
-
-        public HakemController()
-        {
-
-
-
-        }
-
-
-
-
-
-
-
-
-
-
+       
 
         [HttpGet]
         public async Task<IActionResult> sunucusaati()
@@ -73,9 +55,6 @@ namespace Telemetri.API.Controllers
                 return Unauthorized();
 
             }
-
-
-
 
 
 
@@ -113,10 +92,6 @@ namespace Telemetri.API.Controllers
             }
 
 
-
-
-
-
         }
 
 
@@ -146,14 +121,6 @@ namespace Telemetri.API.Controllers
                 KonumBilgileri telemcevap = new KonumBilgileri();
                
 
-
-               
-
-
-
-
-
-
                 GPSSaati sistemzaman = new GPSSaati();
 
 
@@ -177,26 +144,6 @@ namespace Telemetri.API.Controllers
 
 
                 telemcevap.konumBilgileri = rondomtelemolustur.telemal();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                 return Ok(telemcevap);
@@ -250,20 +197,6 @@ namespace Telemetri.API.Controllers
             }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         [HttpPost]
@@ -286,8 +219,6 @@ namespace Telemetri.API.Controllers
 
 
 
-
-
                 if (_kamikaze != null)
                 {
                     if(_kamikaze.qrMetni!="teknofest2022")
@@ -300,36 +231,6 @@ namespace Telemetri.API.Controllers
                         qrpuan = qrpuan + 1;
                     }
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -366,19 +267,6 @@ namespace Telemetri.API.Controllers
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         [HttpPost]
@@ -396,20 +284,6 @@ namespace Telemetri.API.Controllers
             return Ok(numara);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
         [HttpPost]
@@ -418,25 +292,10 @@ namespace Telemetri.API.Controllers
 
 
 
-
-
             puan = 0;
            
 
             return Ok();
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -458,19 +317,6 @@ namespace Telemetri.API.Controllers
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
 
@@ -487,23 +333,7 @@ namespace Telemetri.API.Controllers
                 }
 
 
-
-
-
-
-
-
-
                 puan = puan + 1;
-
-
-
-
-
-
-
-
-
 
 
                 return Ok(_kilitlenme);
@@ -515,10 +345,6 @@ namespace Telemetri.API.Controllers
             }
 
         }
-
-
-
-
 
 
     }

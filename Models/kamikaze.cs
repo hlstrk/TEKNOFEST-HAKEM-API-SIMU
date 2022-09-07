@@ -1,4 +1,4 @@
-﻿namespace HAKEM.API.V2
+﻿namespace HAKEM.API.V2.models
 {
     public class kamikazeBaslangicZamani
     {
@@ -20,12 +20,12 @@
 
     public class kamikaze
     {
-   
+
         public kamikazeBaslangicZamani? kamikazeBaslangicZamani { get; set; }
         public kamikazeBitisZamani? kamikazeBitisZamani { get; set; }
 
         public string qrMetni { get; set; }
-        
+
 
     }
 

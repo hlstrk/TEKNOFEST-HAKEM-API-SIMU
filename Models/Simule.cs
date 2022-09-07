@@ -1,4 +1,4 @@
-﻿namespace HAKEM.API.V2
+﻿namespace HAKEM.API.V2.models
 {
     public class rondomtelemolustur
     {
@@ -9,16 +9,16 @@
 
             Random rnd = new Random();
 
-            
 
 
 
 
 
-            
-            for (int i = 0;i<4;i++)
+
+
+            for (int i = 0; i < 4; i++)
             {
-                
+
                 liste.Add(singletelemolustur());
 
 
