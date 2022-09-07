@@ -1,4 +1,6 @@
-﻿namespace HAKEM.API.V2.models
+﻿using HAKEM.API.V2.models;
+
+namespace HAKEM.API.V2.Tools
 {
     public class rondomtelemolustur
     {

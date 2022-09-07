@@ -1,4 +1,5 @@
 ﻿using HAKEM.API.V2.models;
+using HAKEM.API.V2.Tools;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Telemetri.API.Controllers
